@@ -21,14 +21,27 @@ public class Q06 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		
 		//Creates an array of Strings (don't worry if you don't understand how)
 		String[] characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("");
 		
 		System.out.println("How many characters?");
-		int length = in.nextInt();
-		in.close();
+		int length = scan.nextInt();
+
+		int [] locations = new int [length];
+
+		for (int i = 1; i <= length; i++) {
+			int y = (int)(Math.random() * characters.length);
+			locations[i-1] = y;
+		}
+		String[] password = new String [locations.length];
+		for (int i = 0; i < length; i++) {
+			int z = locations[i];
+			password[i] = characters[z];
+			System.out.print(password[i]);
+		}
+		scan.close();
 		
 	}
 }

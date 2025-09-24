@@ -11,6 +11,8 @@ public class Q02 {
 		 * Not what you expected? Use the debugger or ask
 		 * a TA to go through it with you!
 		 */
+
+		 // Prediction: Intially forgot to loop the while, but it made sense after debugging
 		for(int i = 0; i < 3; i++)
 		{
 			int j = i * 2;

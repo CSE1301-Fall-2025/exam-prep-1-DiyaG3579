@@ -17,10 +17,25 @@ public class Q03 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter a positive integer: ");
-		int n = in.nextInt();
-		in.close();
+		int n = scan.nextInt();
+		System.out.println("------------------------------------------------");
+		for (int i = 1; i <= n; i++) {
+			if (i % 5 == 0 && i % 3 == 0) {
+				System.out.println("Fizzbuzz");
+			}
+			else if (i % 3 == 0) {
+				System.out.println("Buzz");
+			}
+			else if (i % 5 == 0) {
+				System.out.println("Fizz");
+			}
+			else {
+				System.out.println(i);
+			}
+		}
+		scan.close();
 
 	}
 }

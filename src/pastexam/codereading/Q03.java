@@ -11,6 +11,7 @@ public class Q03 {
 		 * Not what you expected? Use the debugger or ask
 		 * a TA to go through it with you!
 		 */
+		//Check
 		int j = 1; 
 		for (int i = 0; i < 7; i++)
 		{

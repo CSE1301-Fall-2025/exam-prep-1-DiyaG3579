@@ -16,7 +16,19 @@ public class Q02 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
+		Scanner scan = new Scanner(System.in);
+		int area = 1;
+		System.out.println("Welcome to the area calculator! We will keep calculating until the area is 0");
+		while (area != 0) {
+		System.out.println("Please tell us about the rectangle");
+		System.out.println("What is the length of the rectangle");
+		int length = scan.nextInt();
+		System.out.println("What is the width of the rectangle");
+		int width = scan.nextInt();
+		area = length * width;
+		System.out.println("The area is " + area);
+		}
+		System.out.println("Thank you for using the area calculator!");
+		scan.close();
 	}
 }

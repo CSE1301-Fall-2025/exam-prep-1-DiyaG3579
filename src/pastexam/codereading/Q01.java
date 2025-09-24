@@ -11,9 +11,11 @@ public class Q01 {
 		 * Not what you expected? Use the debugger or ask
 		 * a TA to go through it with you!
 		 */
+		//Prediction: 3; 5 - Good
 		for(int i = 3; i < 7; i+=2)
 		{
 			System.out.println(i);
 		}
+		System.out.println("Correct");
 	}
 }

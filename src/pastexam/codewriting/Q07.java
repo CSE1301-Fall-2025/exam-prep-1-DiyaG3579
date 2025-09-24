@@ -16,10 +16,20 @@ public class Q07 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		System.out.print("Please enter a positive integer: ");
-		int n = in.nextInt();
-		in.close();
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter a positive integer: ");
+		int n = scan.nextInt();
+		System.out.print(" Factors = (");
+		for (int i = 1; i <=n; i++) {
+			if (n % i == 0 && i != n) {
+				System.out.print(i + ", ");
+			}
+			else if (n % i == 0 && i == n) {
+				System.out.print(i + ")");
+			}
+		}
+
+		scan.close();
 		
 	}
 }
