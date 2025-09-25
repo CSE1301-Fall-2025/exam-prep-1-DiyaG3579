@@ -29,7 +29,24 @@ public class Q10 {
 		//any size! Add and subtract some rows
 		//and columns to make sure your solution
 		//works properly.
-		int[][] data = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; 
-		
+		int[][] data = { {1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}, {16, 17, 18, 19, 20}, {21, 22, 23, 24, 25}};
+		int total = 0;
+		for (int i = 0; i < data.length; i++) {
+			for (int j = 0; j < data[0].length; j++) {
+				if (i == j) {
+					total = total + data[i][j];
+				}
+
+			}
+		}
+		for (int i = 0; i < data.length; i++) {
+			for (int j = 0; j < data.length; j++) {
+				if (i == data.length - 1 && j == 0) {
+					System.out.print(data[i][j] + " ");
+				}
+			}
+		}
+		System.out.println();
+		System.out.println(total);
 	}
 }

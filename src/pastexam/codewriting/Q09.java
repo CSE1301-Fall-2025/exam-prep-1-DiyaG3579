@@ -22,12 +22,24 @@ public class Q09 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter a positive integer: ");
-		int quantity = in.nextInt();
+		int quantity = scan.nextInt();
 		System.out.println("Enter a value between 1-100 (inclusive): ");
-		int threshold = in.nextInt();
-		in.close();
+		int threshold = scan.nextInt();
+		double count = 0.0;
+		for (int i = 1; i <= quantity; i++) {
+			int y = (int)(Math.random()*100 + 1);
+			System.out.print(y + " ");
+			if (y > threshold) {
+				count++;
+			}
+		}
+		System.out.println();
+		System.out.println("Numbers above the threshold: " + count);
+		double percentage = count/quantity;
+		System.out.println("Percentage above the threshold: " + percentage);
+		scan.close();
 		
 	}
 }

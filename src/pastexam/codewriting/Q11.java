@@ -30,8 +30,18 @@ public class Q11 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
-		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Select a Random Integer: ");
+		int n = scan.nextInt();
+		int rtop = n + 10; int rbottom = n - 10;
+		int y = (int)(Math.random()*10 + rbottom);
+		System.out.println("I have choosen an integer between: (" + rbottom + ", " + rtop + "). Try to guess it?" );
+		int guess = scan.nextInt();
+			while (guess != y) {
+				System.out.println("Nice try, please guess again");
+				guess = scan.nextInt();
+			}
+			System.out.println("Congratulations you got it!");
+		scan.close();
 	}
 }
