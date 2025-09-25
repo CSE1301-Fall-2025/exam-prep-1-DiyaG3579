@@ -32,11 +32,22 @@ public class Q13 {
 	 */
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		System.out.println("Which value would you like to practice multiplying?");
-		int m = in.nextInt();
-		
+		int m = scan.nextInt();
+		int i = 1;
+		while (i <= 5) {
+			System.out.println("Please enter the value of " + m + " * " + i);
+			int ans = scan.nextInt();
+			if (m * i == ans) {
+				i++;
+			}
+			else {
+				System.out.println("Try Again");
+			}
+		}
+		System.out.println("Good Job!");
 		//your code here
-
+		scan.close();
 	}
 }
