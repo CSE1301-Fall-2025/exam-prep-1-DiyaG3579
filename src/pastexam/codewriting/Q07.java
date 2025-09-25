@@ -19,7 +19,7 @@ public class Q07 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please enter a positive integer: ");
 		int n = scan.nextInt();
-		System.out.print(" Factors = (");
+		System.out.print("Factors = (");
 		for (int i = 1; i <=n; i++) {
 			if (n % i == 0 && i != n) {
 				System.out.print(i + ", ");
