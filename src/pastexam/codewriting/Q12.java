@@ -1,7 +1,5 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
-
 public class Q12 {
 
 	/*
@@ -28,7 +26,24 @@ public class Q12 {
 		//any size! Add and subtract some rows
 		//and columns to make sure your solution
 		//works properly.
-		int[][] data = { {1, 2, 3}, {4, 5, 6} }; 
-		
+		int[][] data = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; 
+		int [] total = new int [data[0].length];
+
+		for (int j = 0; j < data[0].length; j++) {
+			for (int i = 0; i < data.length; i++) {
+				System.out.print(data[i][j] + " ");
+				total[j] = total[j] + data[i][j];
+			}
+		}
+		System.out.println();
+		System.out.print("[");
+		for (int i = 0; i < total.length; i++) {
+			if (i != total.length - 1) {	
+				System.out.print(total[i] + ", ");
+			}
+			else {
+				System.out.print(total[i] + "]");
+			}
+		}
 	}
 }
